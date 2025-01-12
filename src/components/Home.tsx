@@ -17,7 +17,7 @@ const Home = () => {
         </div>
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-2xl text-white">
-            <h1 className="text-5xl font-bold mb-6 animate-fade-in">
+            <h1 className="text-5xl font-bold mb-6 animate-fade-in animate-slide-up">
               Elevate Your Style with THYPEX
             </h1>
             <p className="text-xl mb-8 animate-slide-up">
@@ -59,7 +59,7 @@ const Home = () => {
       {/* Featured Section */}
       <div className="bg-[#EFF3EA] py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose THYPEX?</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 animate-slide-up">Why Choose THYPEX?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <FeatureCard 
               title="Premium Quality" 
@@ -80,7 +80,7 @@ const Home = () => {
   );
 };
 
-const CategoryCard = ({ title, image, link }) => (
+const CategoryCard = ({ title, image, link }: { title: string, image: string, link: string }) => (
   <Link 
     to={link}
     className="group relative h-96 overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow"
@@ -101,7 +101,7 @@ const CategoryCard = ({ title, image, link }) => (
   </Link>
 );
 
-const FeatureCard = ({ title, description }) => (
+const FeatureCard = ({ title, description }: { title: string, description: string }) => (
   <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
     <h3 className="text-xl font-bold mb-3">{title}</h3>
     <p className="text-gray-600">{description}</p>
