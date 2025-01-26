@@ -1,7 +1,4 @@
-import tshirt from '../assets/tshirt.jpg'
-import back from '../assets/back.jpg'
-import tshirtBoy from '../assets/tshirtboy2.jpeg'
-import tshirtback from '../assets/tshirtback.jpeg'
+import tshirt from '../assets/land3.jpeg'
 
 interface Product {
   id: number;
@@ -9,22 +6,17 @@ interface Product {
   description: string;
   price: number;
   offerPrice: number;
-  images: string[];
+  image: string;
 }
 
-export const products: Product[] = [
+export const productsForList: Product[] = [
   {
     id: 1,
-    name: "Thypex Urban Overized Tee",
-    description: "Essential cotton crew neck t-shirt in pristine off-white",
+    name: "Classic White T-Shirt",
+    description: "Essential cotton crew neck t-shirt in pristine white",
     price: 699,
-    offerPrice: 499,
-    images: [
-      tshirt,
-      back,
-      tshirtBoy,
-      tshirtback
-    ]
+    offerPrice:499,
+    image: tshirt
   },
   // {
   //   id: 2,

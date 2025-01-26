@@ -1,21 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Shirt, CircleUserRound, Info, ShoppingBag } from "lucide-react";
+import logo from "../assets/thypex.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    // <nav className="bg-[#FFF2C2] shadow-md fixed w-full z-50">
-    <nav className="bg-white/50 backdrop-blur-md shadow-md fixed w-full z-50 border border-white/30">
+    <nav className={`${scrolled ? 'bg-black/70 backdrop-blur-md' : 'bg-black'} shadow-md fixed w-full z-50 transition-colors duration-300`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link
             to="/"
             className="flex items-center space-x-2 hover:scale-105 transition-transform"
           >
-            <Shirt className="h-8 w-8 text-[#D9DFC6]" />
-            <span className="text-xl font-bold">THYPEX</span>
+            {/* <Shirt className="h-8 w-8 text-red-600" /> */}
+            <img src={logo} alt="" className="h-16"/>
+            {/* <span className="text-xl font-bold text-white">THYPEX</span> */}
           </Link>
 
           {/* Mobile menu button */}
@@ -40,22 +50,22 @@ const Navbar = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 ">
             <NavLink to="/shirts">
-              <Shirt className="h-5 w-5 inline-block mr-1" />
-              Shirts
+              {/* <Shirt className="h-5 w-5 inline-block mr-1 text-white" /> */}
+              <span className="text-white">Shirts</span>
             </NavLink>
             <NavLink to="/tshirts">
-              <ShoppingBag className="h-5 w-5 inline-block mr-1" />
-              T-Shirts
+              {/* <ShoppingBag className="h-5 w-5 inline-block mr-1 text-white" /> */}
+              <span className="text-white">T-Shirts</span>
             </NavLink>
             <NavLink to="/pants">
-              <CircleUserRound className="h-5 w-5 inline-block mr-1" />
-              Pants
+              {/* <CircleUserRound className="h-5 w-5 inline-block mr-1 text-white" /> */}
+              <span className="text-white">Pants</span>
             </NavLink>
             <NavLink to="/about">
-              <Info className="h-5 w-5 inline-block mr-1" />
-              About Us
+              {/* <Info className="h-5 w-5 inline-block mr-1 text-white" /> */}
+              <span className="text-white">About Us</span>
             </NavLink>
           </div>
         </div>
@@ -66,18 +76,18 @@ const Navbar = () => {
             isOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
           } overflow-hidden`}
         >
-          <div className="pb-3 space-y-2">
+          <div className="pb-3 space-y-2 ">
             <MobileNavLink to="/shirts" onClick={() => setIsOpen(false)}>
-              Shirts
+              <span className="text-white">Shirts</span>
             </MobileNavLink>
             <MobileNavLink to="/tshirts" onClick={() => setIsOpen(false)}>
-              T-Shirts
+              <span className="text-white">T-Shirts</span>
             </MobileNavLink>
             <MobileNavLink to="/pants" onClick={() => setIsOpen(false)}>
-              Pants
+              <span className="text-white">Pants</span>
             </MobileNavLink>
             <MobileNavLink to="/about" onClick={() => setIsOpen(false)}>
-              About Us
+              <span className="text-white">About Us</span>
             </MobileNavLink>
           </div>
         </div>
