@@ -1,12 +1,9 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { productsForList } from '../data/productsForList';
 
-interface ProductListProps {
-  category: string;
-}
 
-const ProductList: React.FC<ProductListProps> = () => {
+
+const ProductList = () => {
   return (
     <div className=" mx-auto px-4 py-32 bg-[#2a2a2a]">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

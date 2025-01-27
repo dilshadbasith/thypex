@@ -56,8 +56,8 @@ const ProductDetail = () => {
 Product: ${product.name}%0A
 Size: ${size}%0A
 Quantity: ${quantity}%0A
-Price: ₹${product.price}%0A
-Total: ₹${product.price * quantity}`;
+Price: ₹${product.offerPrice}%0A
+Total: ₹${product.offerPrice * quantity}`;
 
     window.open(`https://wa.me/918113091954?text=${message}`, "_blank");
   };

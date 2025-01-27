@@ -12,8 +12,8 @@ interface Product {
 export const productsForList: Product[] = [
   {
     id: 1,
-    name: "Classic White T-Shirt",
-    description: "Essential cotton crew neck t-shirt in pristine white",
+    name: "Thypex Urban Overized Tee",
+    description: "Essential cotton crew neck t-shirt in pristine off-white",
     price: 699,
     offerPrice:499,
     image: tshirt
