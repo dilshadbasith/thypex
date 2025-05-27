@@ -51,20 +51,16 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8 ">
-            <NavLink to="/shirts">
-              {/* <Shirt className="h-5 w-5 inline-block mr-1 text-white" /> */}
+            {/* <NavLink to="/shirts">
               <span className="text-white">Shirts</span>
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/tshirts">
-              {/* <ShoppingBag className="h-5 w-5 inline-block mr-1 text-white" /> */}
               <span className="text-white">T-Shirts</span>
             </NavLink>
-            <NavLink to="/pants">
-              {/* <CircleUserRound className="h-5 w-5 inline-block mr-1 text-white" /> */}
+            {/* <NavLink to="/pants">
               <span className="text-white">Pants</span>
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/about">
-              {/* <Info className="h-5 w-5 inline-block mr-1 text-white" /> */}
               <span className="text-white">About Us</span>
             </NavLink>
           </div>

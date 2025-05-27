@@ -1,12 +1,27 @@
-import tshirt from '../assets/tshirt.jpg'
-import back from '../assets/back.jpg'
+import tshirt from '../assets/white-neww2.jpeg'
+import back from '../assets/white-neww.jpeg'
 import tshirtBoy from '../assets/tshirtboy2.jpeg'
 import tshirtback from '../assets/tshirtback.jpeg'
+import brown from "../assets/brown1.jpeg"
+import brown2 from "../assets/brown2.jpeg"
+import brownBoy1 from "../assets/brown-boy1.jpeg"
+import brownBoy2 from "../assets/brown-boy2.jpeg"
+import blue1 from "../assets/blue1.jpeg"
+import blue2 from "../assets/blue2.jpeg"
+import blueBoy1 from "../assets/blue-boy1.jpeg"
+import blueBoy2 from "../assets/blue-boy2.jpeg"
+import black1 from "../assets/black1.jpeg"
+import black2 from "../assets/black2.jpeg"
+import blackBoy1 from "../assets/black-boy1.jpeg"
+import blackBoy2 from "../assets/black-boy2.jpeg"
 
 interface Product {
   id: number;
   name: string;
-  description: string;
+  description1: string;
+  description2: string;
+  description3: string;
+  description4: string;
   price: number;
   offerPrice: number;
   images: string[];
@@ -15,10 +30,62 @@ interface Product {
 export const products: Product[] = [
   {
     id: 1,
-    name: "Thypex Urban Overized Tee",
-    description: "Essential cotton crew neck t-shirt in pristine off-white",
+    name: "Holy Faith Overized Tee",
+    description1: "100% Cotton",
+    description2: "240 GSM",
+    description3: "French Terry",
+    description4: "Colour: Black",
     price: 699,
-    offerPrice: 499,
+    offerPrice:499,
+    images: [
+      black1,
+      black2,
+      blackBoy1,
+      blackBoy2
+    ]
+  }
+  ,
+  {
+    id: 2,
+    name: "Final Pulse Oversized Tee",
+    description1: "100% Cotton",
+    description2: "240 GSM",
+    description3: "French Terry",
+    description4: "Colour: Coffee Brown",
+    price: 699,
+    offerPrice:499,
+    images: [
+      brown,
+      brown2,
+      brownBoy1,
+      brownBoy2
+    ]
+  },
+  {
+    id: 3,
+    name: "Fearless Oversized Tee",
+    description1: "100% Cotton",
+    description2: "240 GSM",
+    description3: "French Terry",
+    description4: "Colour: Royal Blue",
+    price: 699,
+    offerPrice:499,
+    images: [
+      blue1,
+      blue2,
+      blueBoy1,
+      blueBoy2
+    ]
+  },
+  {
+    id: 4,
+    name: "Thypex Urban Oversized Tee",
+    description1: "100% Cotton",
+    description2: "240 GSM",
+    description3: "French Terry",
+    description4: "Colour: Off-white",
+    price: 499,
+    offerPrice: 349,
     images: [
       tshirt,
       back,
@@ -26,25 +93,4 @@ export const products: Product[] = [
       tshirtback
     ]
   },
-  // {
-  //   id: 2,
-  //   name: "Black Basic Tee",
-  //   description: "Timeless black t-shirt made from premium cotton",
-  //   price: 649,
-  //   image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=800"
-  // },
-  // {
-  //   id: 3,
-  //   name: "Navy Striped T-Shirt",
-  //   description: "Stylish navy and white striped pattern t-shirt",
-  //   price: 799,
-  //   image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=800"
-  // },
-  // {
-  //   id: 4,
-  //   name: "Grey Melange T-Shirt",
-  //   description: "Comfortable grey melange t-shirt for casual wear",
-  //   price: 699,
-  //   image: "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800"
-  // }
-];
+  ];

@@ -117,12 +117,18 @@ Total: ₹${product.offerPrice * quantity}`;
 
           {/* Rest of the existing component remains the same */}
           <div className="p-8 md:w-1/2">
-            <h1 className="text-3xl font-bold mb-4 text-white">
+            <h1 className="text-3xl font-bold mb-3 text-white">
               {product.name}
             </h1>
-            <p className="text-gray-600 mb-4 text-white">
-              {product.description}
-            </p>
+            {/* <p className="text-gray-600 mb-4 text-white">
+              {product.description1}
+            </p> */}
+            <ul className="text-white list-disc pl-6 pb-2">
+              <li>{product.description1}</li>
+              <li>{product.description2}</li>
+              <li>{product.description3}</li>
+              <li>{product.description4}</li>
+            </ul>
             <div className="flex gap-2 items-center">
               <p className="text-lg font-bold text-white font-mono">
                 ₹{product.offerPrice}

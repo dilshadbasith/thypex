@@ -28,9 +28,9 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-white">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link to="/about" className="hover:underline">About Us</Link></li>
-              <li><Link to="/shirts" className="hover:underline">Shirts</Link></li>
+              {/* <li><Link to="/shirts" className="hover:underline">Shirts</Link></li> */}
               <li><Link to="/tshirts" className="hover:underline">T-Shirts</Link></li>
-              <li><Link to="/pants" className="hover:underline">Pants</Link></li>
+              {/* <li><Link to="/pants" className="hover:underline">Pants</Link></li> */}
             </ul>
           </div>
 

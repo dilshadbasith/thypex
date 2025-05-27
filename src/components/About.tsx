@@ -25,10 +25,13 @@ const About = () => {
           <div>
             <h2 className="text-3xl font-bold mb-6">Our Story</h2>
             <p className="text-white mb-4">
-            THYPEX.IN was officially launched on the New Year’s Day of 2025. But, the vision and ideas were in the plans since 2023. 
+            THYPEX.IN was officially launched on New Year’s Day, 2025, following nearly two years of planning and development since 2023. 
+            </p>
+            <p className="text-white mb-4">
+            Our goal was to create a clothing brand that reflects our vision while meeting the highest standards of quality and style.
             </p>
             <p className="text-white">
-            It took us almost 2 years to start a clothing brand that matched our visions and met your standards.
+            This is more than a brand, it’s a growing community built on creativity and authenticity. Thank you for being with us from the start. The journey has just begun.
             </p>
           </div>
           <div className="relative h-96">

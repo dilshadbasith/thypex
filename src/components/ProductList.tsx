@@ -20,7 +20,7 @@ const ProductList = () => {
             />
             <div className="p-4">
               <h2 className="text-xl font-semibold mb-2 text-white">{product.name}</h2>
-              <p className="text-gray-600 mb-2 text-white">{product.description}</p>
+              {/* <p className="text-gray-600 mb-2 text-white">{product.description1}</p> */}
               <div className='flex gap-2 items-center'>
               <p className="text-lg font-bold text-white font-mono">₹{product.offerPrice}</p>
               <p className="text-sm font-bold text-red-600 line-through font-mono ">₹{product.price}</p>
